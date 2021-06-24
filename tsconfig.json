@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["types.d.ts", "src/**/*.ts", "src/**.*.*.ts"],
+  "exclude": ["node_modules"]
+}
