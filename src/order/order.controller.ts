@@ -1,8 +1,6 @@
 import { Router, Request, Response, NextFunction, request } from 'express';
 import passport from 'passport';
 import { Controller } from '../interfaces/controller.interface';
-import { RequestWithUser } from '../interfaces/RequestWithUser.interface';
-import { authMiddleware } from '../middleware/auth.middleware';
 import { validationMiddleware } from '../middleware/validation.middleware';
 import { CreateOrderDto } from './order.dto';
 import { Order, OrderStatus } from './order.interface';

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
-    "postinstall": "tsc -p ./",
+    "postinstall": "tsc",
     "start": "node ./dist/index.js"
   },
   "engines": {

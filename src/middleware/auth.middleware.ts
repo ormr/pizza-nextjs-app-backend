@@ -3,11 +3,9 @@ import * as jwt from 'jsonwebtoken';
 import { AuthenticationTokenMissingException } from '../exceptions/AuthenticationTokenMissingException';
 import { WrongAuthenticationTokenException } from '../exceptions/WrongAuthenticationTokenException';
 import { DataStoredInToken } from '../interfaces/dataStoredInToken.interface';
-import { RequestWithUser } from '../interfaces/RequestWithUser.interface';
 import { userModel } from '../user/user.model';
 
 export const authMiddleware = async (request: Request, _response: Response, next: NextFunction) => {
-  const requestWithUser = request as RequestWithUser;
   const cookies = request.cookies;
   if (cookies && cookies.Authorization) {
     const secret = process.env.JWT_SECRET!;
