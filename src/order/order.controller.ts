@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction, request } from 'express';
+import { Router, Request, Response } from 'express';
 import passport from 'passport';
 import { Controller } from '../interfaces/controller.interface';
 import { validationMiddleware } from '../middleware/validation.middleware';

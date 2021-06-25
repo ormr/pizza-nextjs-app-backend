@@ -1,4 +1,4 @@
-import { IsString, IsNumber, ValidateNested } from 'class-validator';
+import { IsNumber } from 'class-validator';
 import { OrderProduct } from './order.interface';
 
 export class CreateOrderDto {
