@@ -24,7 +24,7 @@ export class App {
   private initializeMiddlewares() {
     this.app.use(loggerMiddleware);
     this.app.use(cors({
-      origin: 'http://localhost:3000',
+      origin: 'https://pizza-nextjs-app-frontend.vercel.app',
       credentials: true,
       exposedHeaders: ["Set-Cookie"],
     }));
