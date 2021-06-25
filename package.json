@@ -5,7 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
-    "build": "tsc -p ./ && node ./build/index.js"
+    "postinstall": "tsc -p ./",
+    "start": "node ./dist/index.js"
+  },
+  "engines": {
+    "node": "v14.16.1"
   },
   "devDependencies": {
     "@types/bcrypt": "^3.0.1",
@@ -39,6 +43,5 @@
     "passport-local": "^1.0.0",
     "ts-node": "^9.1.1",
     "ts-node-dev": "^1.1.6"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
