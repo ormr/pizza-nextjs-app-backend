@@ -4,8 +4,8 @@ import { Order } from './order.interface';
 const productCartSchema = new mongoose.Schema({
   id: String,
   name: String,
-  size: String,
-  crustType: String,
+  sizeName: String,
+  crustTypeName: String,
   diameter: String,
   imageSrc: String,
   price: Number,

@@ -1,8 +1,8 @@
 export interface OrderProduct {
   id: string;
   name: string;
-  size: string;
-  crustType: string;
+  sizeName: string;
+  crustTypeName: string;
   diameter: number;
   price: number;
   imageSrc: string;
